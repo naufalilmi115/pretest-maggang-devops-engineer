@@ -16,34 +16,16 @@ Cara pengerjaan, silahkan update file ini tulis jawabanya di bawah ini
 
 2. Infrastructure (infrastruktur) adalah kumpulan komponen fisik maupun virtual berfungsi sebagai dasar untuk mengoperasikan, mengelola, serta mendukung layanan teknologi informasi. Di dalamnya termasuk perangkat keras, perangkat lunak, jaringan, dan berbagai fasilitas yang memastikan aplikasi maupun layanan digital dapat berfungsi secara optimal.
 
-3. Server adalah sebuah sistem komputer, baik berupa perangkat fisik maupun virtual, yang menyediakan layanan, data, atau sumber daya bagi komputer lain (client) melalui jaringan. Server biasanya memiliki spesifikasi tinggi, seperti prosesor cepat, RAM besar, dan kapasitas penyimpanan yang besar, serta dirancang agar dapat beroperasi secara terus-menerus (24/7).
-
-Implementasi dan Contohnya:
-• Web Server – Menyediakan konten website, misalnya untuk e-commerce atau blog.
-Contoh: Apache, Nginx.
-• File/Database Server – Menyimpan dan mengelola data, misalnya untuk sistem informasi akademik atau aplikasi perbankan.
-Contoh: Samba Server, FTP Server.
-• Proxy Server – Bertindak sebagai perantara untuk pengelolaan akses internet, misalnya di sekolah atau perusahaan.
-Contoh: Squid Proxy Server.
+3. Server adalah sistem komputer, baik fisik maupun virtual, yang menyediakan layanan, data, atau sumber daya bagi komputer lain (client) melalui jaringan dan dirancang untuk bekerja terus-menerus. Beberapa implementasinya meliputi Web Server untuk menyajikan konten website seperti e-commerce atau blog (contoh: Apache, Nginx), File/Database Server untuk menyimpan dan mengelola data aplikasi atau sistem informasi (contoh: Samba Server, FTP Server), serta Proxy Server yang berfungsi sebagai perantara dalam pengelolaan akses internet di lingkungan seperti sekolah atau perusahaan (contoh: Squid Proxy Server).
 
 4. Server dibutuhkan dalam pengembangan software karena berperan sebagai pusat penyimpanan data, kode, dan konfigurasi aplikasi yang bisa diakses oleh seluruh tim. Server juga menyediakan lingkungan testing dan staging untuk menguji aplikasi sebelum dirilis, mendukung kolaborasi antar developer, serta memungkinkan otomatisasi proses build, test, dan deployment melalui CI/CD. Dengan adanya server, pengembangan aplikasi menjadi lebih efisien, aman, terkontrol, dan memastikan layanan dapat diakses secara konsisten.
 
 5. Virtualisasi adalah teknologi yang memungkinkan satu perangkat keras menjalankan beberapa mesin virtual (VM) secara bersamaan, masing-masing dengan sistem operasi dan aplikasinya sendiri. Setiap VM terisolasi, sehingga masalah pada satu VM tidak memengaruhi VM lain. Virtualisasi menggunakan hypervisor untuk membagi resource seperti CPU, RAM, dan storage, dan biasanya digunakan untuk mengoptimalkan pemanfaatan hardware, membuat backup, cloning, serta menjalankan berbagai environment secara bersamaan.
-Container adalah teknologi ringan yang memungkinkan aplikasi dijalankan secara terisolasi bersama semua dependensinya di atas sistem operasi host tanpa perlu OS lengkap seperti VM. Container lebih cepat dan efisien dalam penggunaan resource, mempermudah deployment, scaling, dan menjaga konsistensi aplikasi di berbagai environment. Contohnya adalah Docker dan Kubernetes, yang banyak digunakan untuk menjalankan microservices dan aplikasi modern.
+ Container adalah teknologi ringan yang memungkinkan aplikasi dijalankan secara terisolasi bersama semua dependensinya di atas sistem operasi host tanpa perlu OS lengkap seperti VM. Container lebih cepat dan efisien dalam penggunaan resource, mempermudah deployment, scaling, dan menjaga konsistensi aplikasi di berbagai environment. Contohnya adalah Docker dan Kubernetes, yang banyak digunakan untuk menjalankan microservices dan aplikasi modern.
 
-6.Alasan Popularitas Container:
-• Ringan & cepat: Container hanya membawa aplikasi dan dependensinya, sehingga startup sangat cepat dibandingkan VM.
-• Portabel & konsisten: Aplikasi dapat dijalankan di berbagai lingkungan (developer laptop, server, cloud) tanpa masalah kompatibilitas.
-• Mudah diskalakan: Bisa menambah atau mengurangi jumlah container sesuai kebutuhan, ideal untuk aplikasi berbasis microservices.
-• Efisiensi resource: Menggunakan CPU, RAM, dan storage lebih hemat karena berbagi OS host.
-• Mendukung DevOps & CI/CD: Mempermudah otomatisasi build, test, dan deployment sehingga workflow pengembangan lebih cepat dan terkontrol.
-• Isolasi aplikasi: Masalah pada satu container tidak memengaruhi container lain, menjaga stabilitas sistem.
+6.Container populer karena ringan, cepat, dan hanya membawa aplikasi beserta dependensinya, sehingga startup lebih cepat dibanding VM. Ia bersifat portabel dan konsisten di berbagai lingkungan, mudah diskalakan untuk microservices, efisien dalam penggunaan resource, mendukung otomatisasi DevOps/CI/CD, dan menjaga isolasi aplikasi agar sistem tetap stabil.
 
-7. Orchestration Container System adalah teknologi atau sistem yang berfungsi untuk mengelola, mengatur, dan mengotomatisasi deployment serta operasi banyak container secara berskala besar. Dengan sistem ini, container tidak perlu dijalankan satu per satu, melainkan dapat dikelola secara otomatis, terdistribusi, dan mudah diskalakan sesuai kebutuhan.
-Contoh populer:
-• Kubernetes – Platform orchestration yang paling banyak digunakan.
-• Docker Swarm – Fitur orchestration bawaan Docker.
-• OpenShift – Platform enterprise berbasis Kubernetes.
+7. Orchestration Container System adalah teknologi yang digunakan untuk mengelola, mengatur, dan mengotomatisasi deployment serta operasi banyak container dalam skala besar. Dengan sistem ini, container dapat dijalankan, dipantau, dan diskalakan secara otomatis tanpa harus dikelola satu per satu, sehingga memudahkan pengelolaan aplikasi yang kompleks. Contoh populer dari sistem ini antara lain Kubernetes, Docker Swarm, dan OpenShift.
 
 ## Task 1 (Virtualization)
 
